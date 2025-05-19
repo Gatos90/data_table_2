@@ -215,6 +215,7 @@ class PaginatedDataTable2 extends StatefulWidget {
     this.lmRatio = 1.2,
     this.headingRowDecoration,
     this.isVerticalScrollBarVisible,
+    this.showHeadingCheckBox = true,
     this.isHorizontalScrollBarVisible,
   })  : assert(actions == null || (header != null)),
         assert(columns.isNotEmpty),
