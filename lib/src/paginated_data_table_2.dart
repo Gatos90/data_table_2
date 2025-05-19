@@ -516,6 +516,11 @@ class PaginatedDataTable2 extends StatefulWidget {
   /// Exposes scroll controller of the SingleChildScrollView that makes data rows horizontally scrollable
   final ScrollController? horizontalScrollController;
 
+  /// Whether to display a checkbox in the heading row if the checkbox column is present.
+  /// If set to false, the checkbox in the heading row will be hidden while checkboxes in data rows remain visible.
+  /// Defaults to true.
+  final bool showHeadingCheckBox;
+
   /// Determines whether the vertical scroll bar is visible, for iOS takes value from scrollbarTheme when null
   final bool? isVerticalScrollBarVisible;
 
@@ -813,6 +818,7 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
           lmRatio: widget.lmRatio,
           isHorizontalScrollBarVisible: widget.isHorizontalScrollBarVisible,
           isVerticalScrollBarVisible: widget.isVerticalScrollBarVisible,
+          showHeadingCheckBox: widget.showHeadingCheckBox,
         ),
       ),
     );
